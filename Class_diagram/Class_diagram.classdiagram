@@ -103,11 +103,21 @@
                   </relationshipOwnedElementsInternal>
                   <elementDefinition Id="f185198e-f046-4000-b874-4550457cb24c" />
                 </association>
-                <association Id="d6690bf1-9a6e-4b86-93fe-c024e6a00ce6" isDerived="false" sourceEndRoleName="Person" targetEndRoleName="Tilmeldte" isLeaf="false" isAbstract="false">
+                <association Id="d6690bf1-9a6e-4b86-93fe-c024e6a00ce6" isDerived="false" sourceEndRoleName="" targetEndRoleName="Tilmeldte" isLeaf="false" isAbstract="false">
                   <classMoniker Id="1ed38882-74a6-4922-b089-66c7ef24f008" LastKnownName="Tilmeldte" />
                   <relationshipOwnedElementsInternal>
                     <associationHasOwnedEnds>
-                      <memberEnd Id="4bff2238-9656-4dec-8f4b-7d12e221a229" name="Person" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                      <memberEnd Id="4bff2238-9656-4dec-8f4b-7d12e221a229" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                        <lowerValueInternal>
+                          <literalString Id="9ca045fc-853d-4b5a-8cb3-07e0ed440e49" name="Lower" value="*">
+                            <elementDefinition Id="396ccb0e-6bba-48d9-b44e-343894de3e8f" />
+                          </literalString>
+                        </lowerValueInternal>
+                        <upperValueInternal>
+                          <literalString Id="6bd61684-6934-4ac5-9240-a80a146215e0" name="Upper" value="*">
+                            <elementDefinition Id="e09b3f04-bbea-44d2-823b-625152118b2e" />
+                          </literalString>
+                        </upperValueInternal>
                         <elementDefinition Id="999bf957-541f-470c-a3b4-21b713dc99d9" />
                       </memberEnd>
                     </associationHasOwnedEnds>
@@ -181,6 +191,14 @@
                   </type_NamedElement>
                 </property>
               </ownedAttributesInternal>
+              <ownedOperationsInternal>
+                <operation Id="9d517d4e-7a0a-4721-947c-ab6fc8894ab2" name="Tilføjmenu" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="8eec31c5-0c11-450e-aea3-455c4470b3fe" />
+                </operation>
+                <operation Id="9c5030f2-3e89-4c3c-8166-bdb754f111c5" name="FjernMenu" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="d2da50dc-f0d8-4f90-9d49-64334ef2c189" />
+                </operation>
+              </ownedOperationsInternal>
             </class>
           </packageHasNamedElement>
           <packageHasNamedElement>
@@ -225,7 +243,7 @@
                 </association>
               </targetEnds>
               <ownedAttributesInternal>
-                <property Id="03c5eeab-1ffc-462e-b2d8-707c89a3aff5" name="Antal Beboere" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                <property Id="03c5eeab-1ffc-462e-b2d8-707c89a3aff5" name="AntalBørn" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
                   <elementDefinition Id="cc3b4bc7-64a7-45c7-8ac2-7a07c169240a" />
                   <type_NamedElement>
                     <referencedTypeMoniker Id="f7768818-e248-455a-8eda-db103b0f2fe7" LastKnownName="int" />
@@ -236,6 +254,9 @@
                   <type_NamedElement>
                     <referencedTypeMoniker Id="f7768818-e248-455a-8eda-db103b0f2fe7" LastKnownName="int" />
                   </type_NamedElement>
+                </property>
+                <property Id="852f1ac0-857f-4b85-87ca-9ae74d36e6b9" name="AntalVoksne" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="da35d1d5-c973-4f83-a32e-f4fb6a2ce624" />
                 </property>
               </ownedAttributesInternal>
             </class>
@@ -292,6 +313,11 @@
                   <elementDefinition Id="15c737ff-c870-4d1e-ac70-a70ea7037828" />
                 </property>
               </ownedAttributesInternal>
+              <ownedOperationsInternal>
+                <operation Id="5800e63c-624e-45d6-81c1-da616de56f2c" name="FindDag" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="2d1e4ab0-1467-490f-9125-cdca69c9aaaf" />
+                </operation>
+              </ownedOperationsInternal>
             </class>
           </packageHasNamedElement>
           <packageHasNamedElement>
@@ -332,18 +358,12 @@
                     <referencedTypeMoniker Id="f7768818-e248-455a-8eda-db103b0f2fe7" LastKnownName="int" />
                   </type_NamedElement>
                 </property>
-                <property Id="fa710a77-6574-4443-a735-901f6a2bfee3" name="tilmeldte" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="46a9529d-b11e-4629-80ee-d7a2fce75d95" />
-                  <type_NamedElement>
-                    <referencedTypeMoniker Id="e582decc-5037-43f0-a668-aeaf229c9c6e" LastKnownName="person" />
-                  </type_NamedElement>
-                </property>
               </ownedAttributesInternal>
               <ownedOperationsInternal>
-                <operation Id="848ed13d-5a8e-4719-bc22-3c95e80e6d39" name="add" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                <operation Id="848ed13d-5a8e-4719-bc22-3c95e80e6d39" name="tilmeld" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
                   <elementDefinition Id="3e4e3fe5-36e9-4838-9a2d-359e89740b33" />
                 </operation>
-                <operation Id="2e56392c-13d6-4af8-aff0-c1e444d78592" name="remove" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                <operation Id="2e56392c-13d6-4af8-aff0-c1e444d78592" name="frameld" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
                   <elementDefinition Id="fd2c57a4-1759-4cf4-8c44-438b2be5a0a5" />
                 </operation>
               </ownedOperationsInternal>
@@ -360,11 +380,6 @@
     <packageHasNamedElement>
       <referencedType Id="836d56f4-7b43-460d-95e1-778516256183" name="string" isAbstract="false" isLeaf="false" cachedFullName="string">
         <elementDefinition Id="b3b952ca-53e7-4397-bbec-e14f743590c0" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <referencedType Id="e582decc-5037-43f0-a668-aeaf229c9c6e" name="person" isAbstract="false" isLeaf="false" cachedFullName="person">
-        <elementDefinition Id="8ba9716a-e514-4829-aa65-677cea1dc42f" />
       </referencedType>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -402,16 +417,6 @@
           <packageHasNamedElement>
             <class Id="6ddd8d78-105b-458f-b1d6-22ccaa829b2e" name="RelayCommand" isAbstract="false" isLeaf="false" isActiveClass="false">
               <elementDefinition Id="a5259882-b103-4ed6-a184-7a3051744d15" />
-            </class>
-          </packageHasNamedElement>
-          <packageHasNamedElement>
-            <class Id="2ad0e1fe-22f5-48d2-b3d3-f53a6bb1a29f" name="ExceptionHandling" isAbstract="false" isLeaf="false" isActiveClass="false">
-              <elementDefinition Id="f04de5cc-b315-4aed-8719-098a10a9468f" />
-            </class>
-          </packageHasNamedElement>
-          <packageHasNamedElement>
-            <class Id="aadebfc5-e503-44a4-ab92-0a72ca2e279d" name="TestClass" isAbstract="false" isLeaf="false" isActiveClass="false">
-              <elementDefinition Id="7b1423b1-30a1-4ffa-90a8-21566ef389a4" />
             </class>
           </packageHasNamedElement>
         </packagedElements>

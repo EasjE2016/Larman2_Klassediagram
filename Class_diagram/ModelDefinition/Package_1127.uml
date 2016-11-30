@@ -213,7 +213,7 @@
           <association
             Id="0fd87b1c-6b0e-4251-a01d-5a1856a702c7"
             isDerived="false"
-            sourceEndRoleName="Person"
+            sourceEndRoleName=""
             targetEndRoleName="Tilmeldte"
             isLeaf="false"
             isAbstract="false">
@@ -225,7 +225,6 @@
               <associationHasOwnedEnds>
                 <memberEnd
                   Id="999bf957-541f-470c-a3b4-21b713dc99d9"
-                  name="Person"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -233,7 +232,20 @@
                   isDerivedUnion="false"
                   aggregation="None"
                   isComposite="false"
-                  isNavigableOwned="false" />
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="396ccb0e-6bba-48d9-b44e-343894de3e8f"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="e09b3f04-bbea-44d2-823b-625152118b2e"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd
@@ -389,6 +401,24 @@
             </type_NamedElement>
           </property>
         </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="8eec31c5-0c11-450e-aea3-455c4470b3fe"
+            name="Tilføjmenu"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="d2da50dc-f0d8-4f90-9d49-64334ef2c189"
+            name="FjernMenu"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -469,7 +499,7 @@
         <ownedAttributesInternal>
           <property
             Id="cc3b4bc7-64a7-45c7-8ac2-7a07c169240a"
-            name="Antal Beboere"
+            name="AntalBørn"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -503,6 +533,17 @@
                 LastKnownLocation="Package_1127.uml" />
             </type_NamedElement>
           </property>
+          <property
+            Id="da35d1d5-c973-4f83-a32e-f4fb6a2ce624"
+            name="AntalVoksne"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
         </ownedAttributesInternal>
       </class>
     </packageHasNamedElement>
@@ -620,6 +661,16 @@
             aggregation="None"
             isComposite="false" />
         </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="2d1e4ab0-1467-490f-9125-cdca69c9aaaf"
+            name="FindDag"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -702,29 +753,11 @@
                 LastKnownLocation="Package_1127.uml" />
             </type_NamedElement>
           </property>
-          <property
-            Id="46a9529d-b11e-4629-80ee-d7a2fce75d95"
-            name="tilmeldte"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <type_NamedElement>
-              <undefinedTypeMoniker
-                Id="8ba9716a-e514-4829-aa65-677cea1dc42f"
-                LastKnownName="person"
-                LastKnownLocation="Package_1127.uml" />
-            </type_NamedElement>
-          </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation
             Id="3e4e3fe5-36e9-4838-9a2d-359e89740b33"
-            name="add"
+            name="tilmeld"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -732,7 +765,7 @@
             isQuery="false" />
           <operation
             Id="fd2c57a4-1759-4cf4-8c44-438b2be5a0a5"
-            name="remove"
+            name="frameld"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
