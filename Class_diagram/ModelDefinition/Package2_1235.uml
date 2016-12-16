@@ -1,33 +1,33 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
   dslVersion="1.0.0.0"
-  Id="ad886b0b-55ec-493c-b7de-c7e1dad43948"
-  name="ViewModel" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  Id="ed4c823f-f982-41ba-b43d-cbf581c3bc91"
+  name="View" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
   <packagedElements>
     <packageHasNamedElement>
       <class
-        Id="109542c8-c4f3-4367-97cd-9644c4c0f425"
-        name="MainViewModel"
+        Id="8c9df55f-4051-45fb-aab7-4b9e50640c25"
+        name="Mainpage"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
         <targetEnds>
           <association
-            Id="ca06e7c2-0caa-4801-a4cd-49b36c63ff58"
+            Id="692838e3-7955-43f0-beec-404ffdc022aa"
             isDerived="false"
-            sourceEndRoleName="MainViewModel"
-            targetEndRoleName="Person"
+            sourceEndRoleName="Mainpage"
+            targetEndRoleName="MainViewModel"
             isLeaf="false"
             isAbstract="false">
             <classMoniker
-              Id="e0a0ded7-25b1-408d-aab3-235f1a9fb5dc"
-              LastKnownName="Person"
-              LastKnownLocation="Package_1127.uml" />
+              Id="0b795cc1-da63-41e1-ba36-e1794fd5cd96"
+              LastKnownName="MainViewModel"
+              LastKnownLocation="Package1_1235.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="e70d2eba-fb1e-4add-a6cb-747f56d2d734"
-                  name="MainViewModel"
+                  Id="78d35e85-2039-4b04-bfd7-5f5bc930c677"
+                  name="Mainpage"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -39,8 +39,8 @@
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="6fd841c1-8e1d-4f0b-85b0-5ad1fa122478"
-                  name="Person"
+                  Id="5cac759f-665f-40cf-8f72-c1ce22362f38"
+                  name="MainViewModel"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -53,14 +53,6 @@
           </association>
         </targetEnds>
       </class>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <class
-        Id="a5259882-b103-4ed6-a184-7a3051744d15"
-        name="RelayCommand"
-        isAbstract="false"
-        isLeaf="false"
-        isActiveClass="false" />
     </packageHasNamedElement>
   </packagedElements>
 </package>

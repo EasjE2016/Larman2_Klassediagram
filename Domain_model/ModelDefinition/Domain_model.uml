@@ -172,58 +172,6 @@
             </relationshipOwnedElementsInternal>
           </association>
           <association
-            Id="0f06aa32-2680-4717-8571-7260483f18be"
-            isDerived="false"
-            sourceEndRoleName="Person"
-            targetEndRoleName="Hus"
-            isLeaf="false"
-            isAbstract="false">
-            <classMoniker
-              Id="e4cbc177-d9ed-487a-b0a8-301591eb138f"
-              LastKnownName="Hus"
-              LastKnownLocation="Domain_model.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="f7845391-3053-4b09-809c-ce5b77cd1a7f"
-                  name="Person"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false"
-                  isNavigableOwned="false">
-                  <lowerValueInternal>
-                    <literalString
-                      Id="0da809e1-4b31-43c5-9d0d-b986e657b619"
-                      name="Lower"
-                      value="1" />
-                  </lowerValueInternal>
-                  <upperValueInternal>
-                    <literalString
-                      Id="18b56fd5-8674-472d-8ced-1a06ba262781"
-                      name="Upper"
-                      value="*" />
-                  </upperValueInternal>
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="a9b9e960-665c-46bd-9450-b08f4832e2fb"
-                  name="Hus"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false" />
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-          <association
             Id="b885a63b-5c98-4418-9aab-53f10fc9c40e"
             isDerived="false"
             sourceEndRoleName="Person"
@@ -379,7 +327,7 @@
     <packageHasNamedElement>
       <class
         Id="e4cbc177-d9ed-487a-b0a8-301591eb138f"
-        name="Hus"
+        name="Tilmeldtehuse"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -453,7 +401,7 @@
         <ownedAttributesInternal>
           <property
             Id="e5421714-0ad2-4f1d-a83d-3fe6579d5de4"
-            name="Antal Beboere"
+            name="Antal Voksne"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -464,7 +412,29 @@
             isComposite="false" />
           <property
             Id="ca3f0e19-cbda-478c-a62c-3f40dedbaa1c"
-            name="Nummeret"
+            name="Antal Børn"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="fe193942-f7f1-4459-bfbc-93005e157e93"
+            name="AntalUnge"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="2b59adab-3464-4614-8575-171825239f7f"
+            name="antalKuverter"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -474,6 +444,16 @@
             aggregation="None"
             isComposite="false" />
         </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="c9696e22-05be-4743-92a3-4ccfe95cce66"
+            name="SumKuvertDag"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -501,7 +481,7 @@
     <packageHasNamedElement>
       <class
         Id="61f2af0d-f01b-46f4-909f-18177fafbdf3"
-        name="Kalender"
+        name="Uge"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">

@@ -19,45 +19,107 @@
   </profileInstances>
   <packagedElements>
     <packageHasNamedElement>
-      <packageMoniker
-        Id="697d7517-70bc-47cf-9353-2a843e0895c4"
-        LastKnownName="Model"
-        LastKnownLocation="Package_1127.uml" />
+      <undefinedType
+        Id="0f3126b0-cc7f-4607-8ae3-6e1a3d52db32"
+        name="string" />
     </packageHasNamedElement>
     <packageHasNamedElement>
-      <packageMoniker
-        Id="ad886b0b-55ec-493c-b7de-c7e1dad43948"
-        LastKnownName="ViewModel"
-        LastKnownLocation="Package_1142.uml" />
+      <undefinedType
+        Id="16db78fc-c5a6-4892-9675-f44324e35955"
+        name="Int" />
     </packageHasNamedElement>
     <packageHasNamedElement>
-      <packageMoniker
-        Id="1f66931d-4a3e-42fb-811d-cce1a0835585"
-        LastKnownName="View"
-        LastKnownLocation="Package_1150.uml" />
+      <undefinedType
+        Id="1d039856-e25b-405d-ab74-cfe52d4afce4"
+        name="Double" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="a6294490-ee36-4938-8587-d565a7d08aad"
+        name="ItemsChangeObservableCollection&lt;TilmeldteHuse&gt;" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="1e543f49-2e96-47df-8ae4-32edabdcefff"
+        name="tilmeldtehuse" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="c29a30d9-7d57-44f6-9584-39bff28ef72c"
+        name="ItemsChangeObservableCollection&lt;Dag&gt;" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="6fafdb99-6176-49a8-a1a5-5d3236794db7"
+        name="FSappModels::Model::Dag" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="a29c9994-c9e5-4a4d-a656-bd0ff34cd3e5"
+        name="Tilmeldtehuse" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="d9dce8d0-b10b-44e9-b635-ee0652db1265"
+        name="double" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="6a4242bf-95a9-4cf9-b4c6-5a5feaf05c48"
+        name="Dictionary&lt;int,Double&gt;" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="0a90f0c9-7428-46f1-b524-f3c2b2939516"
+        name="gridView" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="48d03faf-2a50-4b53-bc85-b3d76e4b448a"
+        name="Uge" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="46098a2a-332b-407a-8cb7-92083f249058"
+        name="Dag" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="df53f52f-d0f5-4fd5-a41e-90efe9d6df0a"
+        name="List&lt;tilmeldtehuse&gt;" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="e7c1cc4e-4fc2-4564-9ed5-966a1c8a6e1a"
+        name="FSappModels::ViewModel::RelayCommand" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="e414f835-e414-4d39-827d-2acc623a4c7f"
+        name="Action" />
     </packageHasNamedElement>
     <packageHasNamedElement>
       <Interface
-        Id="d2b75939-ed60-48d4-8ac9-43ccbee7b201"
-        name="InotifyPropertyChanged"
+        Id="50079712-cb87-48f3-98d3-6804c865679c"
+        name="InotifyPropertyChanged1"
         isAbstract="false"
         isLeaf="false">
         <targetEnds>
           <association
-            Id="fb9b20cb-193d-4c6e-bf4c-8e20357f5126"
+            Id="de3ceab4-0d8d-49d7-a4ce-c3538ea739f4"
             isDerived="false"
             sourceEndRoleName="InotifyPropertyChanged"
             targetEndRoleName=""
             isLeaf="false"
             isAbstract="false">
             <classMoniker
-              Id="109542c8-c4f3-4367-97cd-9644c4c0f425"
+              Id="0b795cc1-da63-41e1-ba36-e1794fd5cd96"
               LastKnownName="MainViewModel"
-              LastKnownLocation="Package_1142.uml" />
+              LastKnownLocation="Package1_1235.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="b9a7992c-92be-45a0-8edd-6e44db15edd9"
+                  Id="d9051f69-9101-4c43-8f79-67870d4d8df7"
                   name="InotifyPropertyChanged"
                   isLeaf="false"
                   isStatic="false"
@@ -70,7 +132,7 @@
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="a5fe9c4c-256e-4b5e-97f8-334f38fdd0ff"
+                  Id="351ff65e-88e6-483b-9911-ba23fec4b7dd"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -84,7 +146,7 @@
         </targetEnds>
         <ownedAttributes>
           <property
-            Id="6ab4b0c8-4a75-45b0-b872-74eb5ff951db"
+            Id="e10422ad-b61d-4a03-8e30-5074819de2df"
             name="propertyname"
             isLeaf="false"
             isStatic="false"
@@ -96,13 +158,31 @@
             isComposite="false">
             <type_NamedElement>
               <undefinedTypeMoniker
-                Id="b3b952ca-53e7-4397-bbec-e14f743590c0"
+                Id="0f3126b0-cc7f-4607-8ae3-6e1a3d52db32"
                 LastKnownName="string"
-                LastKnownLocation="Package_1127.uml" />
+                LastKnownLocation="Class_diagram.uml" />
             </type_NamedElement>
           </property>
         </ownedAttributes>
       </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="a431a99e-da28-4c53-8632-8cf5d3b00549"
+        LastKnownName="Model"
+        LastKnownLocation="Package_1235.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="5fa52539-e04f-415c-a339-06ab8da4fc4e"
+        LastKnownName="ViewModel"
+        LastKnownLocation="Package1_1235.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="ed4c823f-f982-41ba-b43d-cbf581c3bc91"
+        LastKnownName="View"
+        LastKnownLocation="Package2_1235.uml" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType
