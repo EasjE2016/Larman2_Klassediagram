@@ -7,8 +7,6 @@ Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "Domain_model", "Domain_mode
 EndProject
 Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "Class_diagram", "Class_diagram\Class_diagram.modelproj", "{AD3799F1-8196-4D5F-A12E-DDDDFC1981B2}"
 EndProject
-Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "Sequence_diagram", "Sequence_diagram\Sequence_diagram.modelproj", "{DDA667BD-D25C-4E42-9FA8-EA793CD55F8F}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,10 +21,6 @@ Global
 		{AD3799F1-8196-4D5F-A12E-DDDDFC1981B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AD3799F1-8196-4D5F-A12E-DDDDFC1981B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AD3799F1-8196-4D5F-A12E-DDDDFC1981B2}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DDA667BD-D25C-4E42-9FA8-EA793CD55F8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DDA667BD-D25C-4E42-9FA8-EA793CD55F8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DDA667BD-D25C-4E42-9FA8-EA793CD55F8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DDA667BD-D25C-4E42-9FA8-EA793CD55F8F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
