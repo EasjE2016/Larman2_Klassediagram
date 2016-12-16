@@ -391,6 +391,16 @@
                   <relationshipOwnedElementsInternal>
                     <associationHasOwnedEnds>
                       <memberEnd Id="2f1d616f-30cd-48f9-a660-9960164afea0" name="MainViewModel" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                        <lowerValueInternal>
+                          <literalString Id="86553ab4-d3e9-47e1-92f5-69c7416e314b" name="Lower" value="1">
+                            <elementDefinition Id="1efaa666-574f-4b28-93d8-9e21c310c72f" />
+                          </literalString>
+                        </lowerValueInternal>
+                        <upperValueInternal>
+                          <literalString Id="eed2e6ed-bf45-4289-b2e8-e733b8e28a50" name="Upper" value="1">
+                            <elementDefinition Id="a3957148-b7c8-443b-89e3-288198f0fb0a" />
+                          </literalString>
+                        </upperValueInternal>
                         <elementDefinition Id="a924a09b-792d-4824-a072-20356d299923" />
                       </memberEnd>
                     </associationHasOwnedEnds>
